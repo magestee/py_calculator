@@ -29,6 +29,8 @@ def addition():
 def subtraction():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+    continue_calculator = 'y'
+
     print("subtraction:")
 
     num1 = int(input("type your first numeber: "))
