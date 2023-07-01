@@ -29,12 +29,31 @@ def addition():
 def subtraction():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    print("subtraction:")
+    continue_calculator = 'y'
 
     num1 = int(input("type your first numeber: "))
     num2 = int(input("type your second number: "))
 
-    return num1 - num2
+    answer = num1 - num2
+    values_entered = 2
+
+    print(f"current result: {answer}")
+
+    while continue_calculator.lower() == 'y':
+        continue_calculator = input('enter more(y/n) ?: ')
+        while continue_calculator.lower() not in ['y', 'n']:
+            print("please ebter \"y\" or \"n\" ")
+            continue_calculator = input('enter more(y/n) ?: ')
+        if continue_calculator.lower() == 'n':
+            break
+
+        num = float(input("type another number to subtract from the result: "))
+        answer -= num
+        print(f"current result: {answer}")
+
+        values_entered += 1
+
+    return  [answer, values_entered]
 
 def multipliction():
     os.system('cls' if os.name == 'nt' else 'clear')
