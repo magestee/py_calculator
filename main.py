@@ -1,4 +1,4 @@
-import os 
+import os
 
 def addition():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -85,7 +85,7 @@ def calculator():
             results = multipliction()
             print("answer: ", results)
         elif choice == "d":
-            results = multipliction()
+            results = divion()
             print("answer: ", results)
 
 if __name__ == '__main__':
