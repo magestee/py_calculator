@@ -30,6 +30,11 @@ def subtraction():
     os.system('cls' if os.name == 'nt' else 'clear')
 
     continue_calculator = 'y'
+<<<<<<< HEAD
+=======
+
+    print("subtraction:")
+>>>>>>> c37d96d988aa86e7efc495ad0581661947bf4807
 
     num1 = int(input("type your first numeber: "))
     num2 = int(input("type your second number: "))
